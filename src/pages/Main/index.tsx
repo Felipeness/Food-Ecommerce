@@ -1,3 +1,5 @@
+import { Outlet } from 'react-router-dom'
+
 import { Sidebar } from '../../components/Sidebar'
 
 import { Container } from './styles'
@@ -10,7 +12,7 @@ export default function Main() {
       <Sidebar />
       <section>
         <img src={logoImg} />
-        {/* sub página */}
+        <Outlet/>
       </section>
     </Container>
   )
